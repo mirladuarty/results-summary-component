@@ -49,3 +49,19 @@ main {
     gap: 1.5rem;
 }
 
+.rating > p,
+.description > p {
+    text-align: center;
+}
+
+.result-container > p,
+.description > p,
+.max-rating {
+    color: var(--light-laventer);
+}
+
+.description > #condition,
+.rating-number {
+    color: var(--white);
+    font-weight: bold;
+}
