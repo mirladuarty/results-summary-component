@@ -39,3 +39,13 @@ main {
     width: 100%;
 }
 
+.result-container {
+    width: 100%;
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
