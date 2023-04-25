@@ -65,3 +65,35 @@ main {
     color: var(--white);
     font-weight: bold;
 }
+
+.summary {
+    width: 100%;
+    padding: 2.6rem;
+}
+
+.resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container {
+    width: 100%;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item > .icon{
+    display: flex;
+
+}
+
+button {
+    width: 100%;
+}
