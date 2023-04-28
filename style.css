@@ -26,7 +26,7 @@
     --light-royal-blue: hsl(241, 81%, 54%);
 
     --violet-blue: hsla(256, 72%, 46%, 1);
-    --persian-blue: hsla(241, 72%, 46%, 0);
+    --persian-blue: hsla(241, 72%, 46%, 0.1);
 }
 
 body {
@@ -41,12 +41,36 @@ main {
 
 .result-container {
     width: 100%;
-    background: blue;
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    padding: 2rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+
+    border-radius: 0 0 40px 40px;
+}
+.rating {
+    border-radius: 50%;
+    padding: 2rem 3rem;
+    background: var(--cobalt-blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom, var(--violet-blue), var(--light-royal-blue));
+}
+
+.rating-number {
+    font-size: 4rem;
+}
+
+.max-rating {
+    font-size: 1.4rem;
 }
 
 .rating > p,
@@ -54,10 +78,16 @@ main {
     text-align: center;
 }
 
+
 .result-container > p,
 .description > p,
 .max-rating {
     color: var(--light-laventer);
+}
+
+#condition {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
 
 .description > #condition,
@@ -68,6 +98,10 @@ main {
 
 .summary {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2.6rem;
 }
 
@@ -76,24 +110,46 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .resume-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
 }
-
 
 .item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
 
+    padding: 1.5rem;
+
+    background: hsla(0, 100%, 67%, 0.1);
+    height: 4.4rem;
+    border-radius: 10px;
 }
 
 .item > .icon{
     display: flex;
+    gap: 0.7rem;
+}
 
+.actual-rating > span {
+    color: var(--light-laventer);
 }
 
 button {
     width: 100%;
+    padding: 1.5rem;
+    background: var(--dark-grey-blue);
+    border: transparent;
+    border-radius: 20px;
+    
+    color: var(--white);
+
+    font-weight: bold;
+    cursor: pointer;
 }
